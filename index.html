@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio</title>
+    <style>
+body {
+    font-family: Arial,  sans-serif;
+    margin:0;
+    padding:0;
+    background-color: rgb(54, 145, 54); 
+    text-align: center;
+}
+nav {
+    background-color: #03330f;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+#about{
+    background:#7ee275;
+    padding: 50px;
+    text-align: center;
+}
+#project {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.project-card {
+    background: #7ee275;
+    padding: 20px;
+    border-radius:10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color:black;
+}
+table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+table, th, td {
+    border:1px solid black;
+    padding:10px;
+}
+th {
+    background-color: #03300a;
+    color: white;
+}
+form {
+    display: inline-block;
+    text-align: center;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[ type="submit"] {
+    background-color: #044913;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+}
+video {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+audio{
+    width: 50%;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="about">About Me</a></li>
+            <li><a href="projects">Project</a></li>
+            <li><a href="skills">Skill</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Welcome To My  I am a passionate web developer with a love for clean and efficient code.</p>
+        </section>
+
+        <section id="projects">
+            <h1>My Projects</h1>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h2>Greeting Page</h2>
+                    <p>A simple webpage that says "Hello,World!"with a stylish design.</p>
+                </div>
+                <div class="project-card">
+                    <h2>Color Changer</h2>
+                    <p>A webpage where users can click a button to change the background color.</p>
+                </div>
+                <div class="project-card">
+                    <h2>My First WebPage</h2>
+                    <p>A basic webpage showcasing my name,hobbies,and a short introduction.</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="skills">
+            <h1>My Skills</h1>
+            <div class="skills-container"></div>
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+                
+                <tr>
+                    <td>HTML</td>
+                    <td>⭐⭐⭐Advance</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>⭐⭐ Beginner</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>⭐ Learning</td>
+                </tr>
+            </table>
+        </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <div class="contact-container">
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name"placeholder="Enter your name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email"placeholder="Enter your email" required>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message"placeholder="Write your message..." required></textarea>
+
+                    <input type="submit" value="📩 Send Message">
+                </form>
+            </div>
+        </section>
+
+        <section>
+        <h2>Github Website</h2>
+        <br>
+        <a href="https://github.com/WalijaNoreen/SAMZ-Technonolgy-2"
+        target="_blank">Visit My Profile</a>
+    </section>
+    
+        <section id="video">
+            <h1>Motivational Video</h1>
+            <source src="video.mp4" type="video/mp4">
+            <br>
+            <a href="video.mp4"target="_blank" class="video.mp4">Watch Video</a>
+        </section>
+        <section id="audio" class="audio-cotainer">
+            <h1>Listen To My Audio</h1>
+            <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+        </audio>
+        </section>
+    </section>
+</body>
+</html>
